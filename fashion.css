@@ -105,7 +105,6 @@ header{
     flex-grow:1;
     flex-shrink:1;
     flex-basis: 250x;
-    
     overflow:hidden;
     box-shadow:2px 2px 4px black;
     padding:20px;
@@ -208,9 +207,11 @@ footer h3{
     
     .card{
         width:300px;
+        align-self:center;
     }
     .card1{
         width:300px;
+        align-self:center;
     }
     footer{
         flex-direction: column;
@@ -253,6 +254,41 @@ footer h3{
     }
 
 }
+@media(max-width:1400px){
+    header{
+        flex-direction: column;
+        align-items: start;
+    }
+    .nav-items{
+        flex-direction: column;
+        align-self: center;
+        gap:10px;
+    }
+    .hero{
+        flex-direction: column;
+        align-self: center;
+        height:90vh;
+    }
+    
+    .flex-container{
+        flex-direction: column;
+        align-self: start;
+    }
+    
+    .card{
+        width:300px;
+        align-self:center;
+    }
+    .card1{
+        width:300px;
+        align-self:center;
+    }
+    footer{
+        flex-direction: column;
+        align-self: center;
+    }
+}
+
 @keyframes pulseFromTop {
     
     from{
